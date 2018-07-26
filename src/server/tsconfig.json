@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES6",
+      "importHelpers": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    },
+    "include": [
+      "../types/*"
+    ]
+}
