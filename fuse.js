@@ -40,7 +40,6 @@ Sparky.task("config", () => {
                     StylusPlugin({
                         compress: true
                     }),
-                    CSSResourcePlugin(),
                     CSSPlugin()
                 ],
                 template: [ConsolidatePlugin({ useDefault : false, engine: 'pug' })]
