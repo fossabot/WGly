@@ -1,12 +1,10 @@
 {
     "compilerOptions": {
       "module": "commonjs",
-      "target": "ES6",
+      "target": "es5",
+      "strict": true,
       "importHelpers": true,
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true
-    },
-    "include": [
-      "../types/*"
-    ]
+    }
 }

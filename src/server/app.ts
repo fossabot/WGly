@@ -14,6 +14,7 @@ import middleware from './middleware'
 import services from './services'
 import appHooks from './app.hooks'
 import channels from './channels'
+import authentication from './authentication'
 
 const app = express(feathers())
 
@@ -31,10 +32,10 @@ app.use('/', express.static(app.get('public')))
 
 // Set up Plugins and providers
 app.configure(express.rest())
-
 app.configure(primus({ transformer: 'websockets' }))
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware)
+app.configure(authentication)
 // Set up our services (see `services/index.js`)
 app.configure(services)
 // Set up event channels (see channels.js)

@@ -2,9 +2,9 @@
 import createService from './test.class'
 import { Application } from 'feathersjs__feathers'
 
-const memory = require('feathers-memory')
+import memory from 'feathers-memory'
 
-export default function(app: Application) {
+export default (app: Application) => {
   // Initialize our service with any options it requires
   //app.use('/test', createService({}))
 

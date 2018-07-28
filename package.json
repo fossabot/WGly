@@ -27,21 +27,33 @@
     "vue-template-es2015-compiler": "^1.6.0"
   },
   "dependencies": {
+    "@feathersjs/authentication": "^2.1.7",
+    "@feathersjs/authentication-client": "^1.0.2",
+    "@feathersjs/authentication-jwt": "^2.0.1",
+    "@feathersjs/authentication-local": "^1.2.1",
     "@feathersjs/configuration": "^1.0.2",
     "@feathersjs/express": "^1.2.3",
     "@feathersjs/feathers": "^3.1.7",
     "@feathersjs/primus": "^3.2.1",
     "@feathersjs/primus-client": "^1.1.0",
+    "@types/feathersjs__authentication": "^2.1.1",
+    "@types/feathersjs__authentication-jwt": "^1.0.3",
+    "@types/feathersjs__authentication-local": "^1.0.2",
     "compression": "^1.7.3",
     "cors": "^2.8.4",
+    "feathers-nedb": "^3.1.0",
     "feathers-vuex": "^1.4.8",
     "helmet": "^3.13.0",
+    "nedb": "^1.8.0",
+    "primus": "^7.2.2",
     "serve-favicon": "^2.5.0",
     "vue": "^2.5.16",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
     "vuetify": "^1.1.8",
     "vuex": "^3.0.1",
-    "winston": "^3.0.0"
+    "vuex-type-helper": "^1.2.0",
+    "winston": "^3.0.0",
+    "ws": "^6.0.0"
   }
 }
