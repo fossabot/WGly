@@ -3,9 +3,12 @@ import "material-design-icons-iconfont/dist/material-design-icons.css" // Ensure
 import Vuetify from "vuetify"
 import "vuetify/dist/vuetify.css"
 Vue.use(Vuetify)
-import App from './index.vue'
+import App from './App.vue'
+import store from './store/'
+//import './api/feathers-client'
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  store
 })

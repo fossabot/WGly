@@ -7,6 +7,6 @@
       "experimentalDecorators": true
     },
     "include": [
-      "../types/*"
+      "../types/*.d.ts"
     ]
 }

@@ -19,7 +19,7 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://yourdomain.com",
+      "audience": "https://pmbremer.de",
       "subject": "anonymous",
       "issuer": "feathers",
       "algorithm": "HS256",

@@ -8,8 +8,7 @@ import logger from './logger'
 import feathers from '@feathersjs/feathers'
 import configuration from '@feathersjs/configuration'
 import express from '@feathersjs/express'
-
-import primus from '@feathersjs/primus'
+import socketio from '@feathersjs/socketio'
 import middleware from './middleware'
 import services from './services'
 import appHooks from './app.hooks'
@@ -32,7 +31,7 @@ app.use('/', express.static(app.get('public')))
 
 // Set up Plugins and providers
 app.configure(express.rest())
-app.configure(primus({ transformer: 'websockets' }))
+app.configure(socketio());
 // Configure other middleware (see `middleware/index.js`)
 app.configure(middleware)
 app.configure(authentication)

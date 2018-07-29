@@ -34,6 +34,7 @@ Sparky.task("config", () => {
         target: 'browser',
         useTypescriptCompiler: true,
         allowSyntheticDefaultImports: true,
+        experimentalFeatures: true,
         plugins: [
             VueComponentPlugin({
                 style: [
